@@ -1,0 +1,241 @@
+/* responsive hamburger menu/navbar */
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px; 
+  text-decoration: none;
+  font-size: 28px;
+  font-family: 'Abril Fatface', cursive;
+  color: #564A4A;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* Global */
+h1 {
+  font-size: 48px;
+  color: #99A799;
+  font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+  font-size: 48px;
+  color: #564A4A;
+  font-family: 'Abril Fatface', cursive;
+}
+
+p {
+  font-size: 30px;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.button {
+  width: 240px;
+  border: 3px solid #564A4A;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 10px 20px rgba(86, 74, 74, 0.5));
+  border-radius: 15px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* body */
+/* hero */
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 140px;
+}
+
+.hero .texts {
+  width: 50%;
+  text-align: center  ;
+}
+
+.hero .hero-description {
+  font-weight: 700;
+}
+
+/* approach */
+.approach {
+  background-color: #F4EDE2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 85vh;
+  padding: 0 6vw;
+}
+
+.approach .flowchart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.approach .img-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+/* projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  padding: 5vh 3vw;
+}
+
+.project {
+  grid-gap: 3vw;
+}
+
+/* about me */
+.about {
+  background-color: #F4EDE2;
+  padding: 0 3vw 0 6vw;
+  grid-gap: 3vw;
+}
+
+.about p {
+}
