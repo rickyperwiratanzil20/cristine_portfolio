@@ -38,6 +38,11 @@ a {
   background-color: #f4f4f4;
 }
 
+.header .email {
+  position: relative;
+  top: 5px;
+}
+
 .header .logo {
   display: block;
   float: left;
@@ -154,6 +159,10 @@ h2 {
 
 p {
   font-size: 30px;
+  color: #564A4A;
+  line-height: 37px;
+  font-family: Source Sans Pro;
+  font-weight: 300;
 }
 
 .two-columns {
@@ -171,6 +180,15 @@ p {
   border-radius: 15px;
   height: 60px;
   cursor: pointer;
+  font-style: Source Sans Pro;
+  font-size: 24px;
+  font-weight: 600;
+  color:#564A4A;
+}
+
+.button:hover {
+  background-color: #564A4A;
+  color: #FFFBF5;
 }
 
 /* body */
@@ -188,10 +206,6 @@ p {
   text-align: center  ;
 }
 
-.hero .hero-description {
-  font-weight: 700;
-}
-
 /* approach */
 .approach {
   background-color: #F4EDE2;
@@ -204,11 +218,13 @@ p {
 }
 
 .approach .flowchart {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   width: 100%;
   justify-content: center;
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .approach .img-bottom {
@@ -217,17 +233,39 @@ p {
   right: 10px;
 }
 
+.approach .annotation {
+  font-size: 23px;
+  font-style: italic;
+  color: #99A799;
+}
+
 /* projects */
 .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 85vh;
-  padding: 5vh 3vw;
+  padding: 10vh 3vw;
 }
 
 .project {
   grid-gap: 3vw;
+}
+
+.project .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.project-image {
+  box-shadow: 10px 10px #99A799;
+}
+
+.project h2 {
+  margin: 0;
 }
 
 /* about me */
@@ -237,5 +275,27 @@ p {
   grid-gap: 3vw;
 }
 
-.about p {
+.about .left {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.photo-frame {
+  position: absolute;
+  background-color: #99A799;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(86, 74, 74, 0.5);
+}
+
+.picture-frame img {
+  right: 15px;
+  top: 15px;
+  position: relative;
 }
