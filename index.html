@@ -34,8 +34,10 @@
 
     <!-- hero -->
     <div class="hero">
-      <div>
-        <img src="images/bannerimage1.png" />
+      <div class="images-container">
+        <img src="images/bannerimage1.png" alt="girl image 1" class="image one" />
+        <img src="images/bannerimage2.png" alt="girl image 2" class="image two" />
+        <img src="images/bannerimage3.png" alt="girl image 3" class="image three" />
       </div>
       <div class="texts">
         <h1>
@@ -51,25 +53,29 @@
     <div class=approach>
       <h2>My design approach</h2>
       <div class="flowchart">
-        <div class="icon-container">
+        <div class="icon-container" style="grid-area: first;">
             <p class="annotation">Understand problem</p>
             <img src="images/research.png" alt="magnifying glass" />
             <p>Research</p>
+            <span class="arrow-right">&#8594;</span>
         </div>
-        <div class="icon-container">
+        <div class="icon-container" style="grid-area: second;">
           <img src="images/define.png" alt="target icon" />
           <p>Define</p>
+          <span class="arrow-right">&#8594;</span>
         </div>
-        <div class="icon-container">
+        <div class="icon-container" style="grid-area: third;">
           <img src="images/design.png" alt="analyze" />
           <p>Design</p>
         </div>
-        <div class="icon-container">
+        <div class="icon-container" style="grid-area: fourth-top;">
+          <span class="arrow-top-right">&#8599;</span>
           <p class="annotation">Validate solution</p>
           <img src="images/prototype.png" alt="prototype" />
           <p>Prototype</p>
         </div>
-        <div class="icon-container">
+        <div class="icon-container" style="grid-area: fourth-bottom;">
+          <span class="arrow-top-left">&#8598;</span>
           <p class=annotation>Sanity check</p>
           <img src="images/test.png" alt="user interaction icon" />
           <p>Test</p>
@@ -101,7 +107,7 @@
           <img src="images/cristine.png" alt="cristine's photo" />
         </div>
       </div>
-      <div class="">
+      <div class="text">
         <h2>About me</h2>
         <p>
           Hello there!

@@ -51,6 +51,10 @@ a {
   text-decoration: none;
 }
 
+.header .logo img {
+  max-height: 150px;
+}
+
 /* menu */
 
 .header .menu {
@@ -194,7 +198,7 @@ p {
 /* body */
 /* hero */
 .hero {
-  height: 70vh;
+  /* height: 70vh; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -206,6 +210,31 @@ p {
   text-align: center  ;
 }
 
+.hero .images-container {
+  margin-top: 30px;
+}
+
+.hero .image {
+  max-height: 250px;
+  animation: appear 3s infinite;
+  opacity: 0;
+}
+
+.hero .image.two {
+  animation-delay: 1s;
+}
+
+.hero .image.three {
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes appear {
+  0% { opacity: 1;}
+  25% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
 /* approach */
 .approach {
   background-color: #F4EDE2;
@@ -213,23 +242,44 @@ p {
   align-items: center;
   flex-direction: column;
   position: relative;
-  height: 85vh;
+  max-height: 100vh;
   padding: 0 6vw;
 }
 
+.approach h2 {
+  margin-bottom: 0;
+}
+
 .approach .flowchart {
-  /* display: flex;
-  flex-direction: row; */
   width: 100%;
-  justify-content: center;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "first second third fourth-top"
+    "first second third fourth-bottom"; 
+}
+
+.icon-container {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 50px 0;
+}
+
+.icon-container p {
+  margin: 0;
 }
 
 .approach .img-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   right: 10px;
 }
 
@@ -237,6 +287,25 @@ p {
   font-size: 23px;
   font-style: italic;
   color: #99A799;
+  position: absolute;
+  top: -18px;
+}
+
+.approach span {
+  position: absolute;
+  font-size: 40px;
+}
+
+.approach .arrow-right {
+  right: 0;
+}
+
+.approach .arrow-top-right, .approach .arrow-top-left {
+  left: 0;
+}
+
+.approach .arrow-top-left {
+  top: 0
 }
 
 /* projects */
@@ -294,8 +363,114 @@ p {
   box-shadow: 0px 10px 20px rgba(86, 74, 74, 0.5);
 }
 
-.picture-frame img {
+.photo-frame img {
   right: 15px;
   top: 15px;
   position: relative;
+}
+
+
+
+/* mobile responsiveness */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  p {
+    font-size: 24px;
+  }
+
+  .logo img {
+    max-height: 40px !important;
+  }
+  
+  .button {
+    width: 170px;
+    font-size: 20px;
+    height: 44px;
+  }
+  
+  /* hero */
+  .hero .images-container {
+    margin-top: 50px;
+  }
+  .hero .image {
+    max-height: 120px;
+  }
+  .hero .texts {
+    width: 90%;
+  }
+
+  /* approach */
+  .approach {
+    max-height: 100%;
+    padding-bottom: 100px;
+  }
+  .approach h2 {
+    margin-bottom: 20px;
+  }
+  .approach .flowchart {
+    padding-bottom: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+      "first first"
+      "second second"
+      "third third"
+      "fourth-top fourth-bottom";
+ }
+  .icon-container {
+    margin: 40px 0 0 0 ;
+  }
+  .approach .arrow-right {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+    right: auto;
+    bottom: -28px;
+  }
+  .approach .arrow-top-right, .approach .arrow-top-left {
+    left: auto;
+    top: -70px !important;
+  }
+
+  /* projects and about */
+  .two-columns {
+    grid-template-columns: none;
+    grid-gap: 25px;
+  }
+  .projects {
+    height: auto;
+  }
+  .project-image {
+    max-width: 90%;
+  }
+  .project .right {
+    padding: 0 20px;
+  }
+  .project .right h2 {
+    text-align: center;
+  }
+  .project .right p {
+    margin-top: 10px;
+  }
+  .about .left {
+    margin-top: 40px;
+  }
+  .about .text {
+    padding: 0 20px;
+  }
+  .photo-frame {
+    position: relative;
+    text-align: center;
+    width: 70%;
+  }
+  .photo-frame img {
+    max-width: 100%;
+    right: 10px;
+    top: 10px;
+  }
 }
