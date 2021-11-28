@@ -434,7 +434,7 @@ p {
     margin-bottom: 20px;
   }
   .approach .flowchart {
-    padding-bottom: 150px;
+    padding-bottom: 70px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
@@ -455,6 +455,10 @@ p {
   .approach .arrow-top-right, .approach .arrow-top-left {
     left: auto;
     top: -70px !important;
+  }
+  .approach .img-bottom {
+    max-height: 150px;
+    bottom: -5px;
   }
 
   /* projects and about */
