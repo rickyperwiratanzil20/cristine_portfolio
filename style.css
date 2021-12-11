@@ -47,7 +47,6 @@ a {
 
 .header .email {
   position: relative;
-  top: 5px;
 }
 
 .header .logo {
@@ -59,7 +58,7 @@ a {
 }
 
 .header .logo img {
-  max-height: 150px;
+  max-height: 60px;
 }
 
 /* menu */
@@ -151,6 +150,7 @@ a {
   }
   .email img, .linkedin img {
     display: block;
+    max-height: 30px;
   }
   .email p, .linkedin p {
     display: none !important;
@@ -165,6 +165,7 @@ a {
     clear: none;
     float: right;
     max-height: none;
+    margin-right: 40px;
   }
   .header .menu-icon {
     display: none;
@@ -209,7 +210,6 @@ p {
   cursor: pointer;
   font-style: Source Sans Pro;
   font-size: 24px;
-  font-weight: 600;
   color:#564A4A;
 }
 
@@ -233,7 +233,7 @@ p {
 }
 
 .hero .images-container {
-  margin-top: 30px;
+  margin-top: 5em;
 }
 
 .hero .image {
@@ -265,24 +265,31 @@ p {
   flex-direction: column;
   position: relative;
   max-height: 100vh;
-  padding: 0 6vw;
 }
 
 .approach h2 {
   margin-bottom: 0;
 }
 
-.approach .flowchart {
+.approach .flowchart-wrapper {
   width: 100%;
+}
+
+.approach .flowchart-wrapper .flowchart-grid {
   position: relative;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr); 
   gap: 0px 0px; 
+  /* grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 
     "first second third fourth-top"
-    "first second third fourth-bottom"; 
+    "first second third fourth-bottom"; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "first second third fourth-top fifth"
+    "first second third fourth-bottom fifth";
+    padding-left: 10vw;
 }
 
 .icon-container {
@@ -299,10 +306,15 @@ p {
   margin: 0;
 }
 
+.icon-container img {
+  max-width: 108px;
+}
+
 .approach .img-bottom {
   position: absolute;
-  bottom: -15px;
+  bottom: 0;
   right: 10px;
+  max-height: 14em;
 }
 
 .approach .annotation {
@@ -320,14 +332,23 @@ p {
 
 .approach .arrow-right {
   right: 0;
+  top: 50px;
 }
 
 .approach .arrow-top-right, .approach .arrow-top-left {
-  left: 0;
+  left: -20px;
 }
 
 .approach .arrow-top-left {
   top: 0
+}
+
+.approach .arrow-down {
+  top: 37%;
+}
+
+.approach .arrow-icon {
+  max-width: 30px;
 }
 
 /* projects */
@@ -336,7 +357,7 @@ p {
   flex-direction: column;
   align-items: center;
   min-height: 70vh;
-  padding: 10vh 3vw;
+  padding: 100px 60px 60px 60px;
 }
 
 .project {
@@ -364,6 +385,7 @@ p {
   background-color: #F4EDE2;
   padding: 0 3vw 0 6vw;
   grid-gap: 3vw;
+  padding-bottom: 60px;
 }
 
 .about .left {
@@ -389,6 +411,18 @@ p {
   right: 15px;
   top: 15px;
   position: relative;
+}
+
+/* footer */
+footer {
+  background-color: #F4EDE2;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 
@@ -417,9 +451,6 @@ p {
   }
   
   /* hero */
-  .hero .images-container {
-    margin-top: 50px;
-  }
   .hero .image {
     max-height: 120px;
   }
@@ -430,20 +461,21 @@ p {
   /* approach */
   .approach {
     max-height: 100%;
-    padding-bottom: 100px;
   }
   .approach h2 {
-    margin-bottom: 20px;
+    margin: 20px;
   }
-  .approach .flowchart {
+  .approach .flowchart-wrapper .flowchart-grid {
     padding-bottom: 70px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
       "first first"
       "second second"
       "third third"
-      "fourth-top fourth-bottom";
+      "fourth-top fourth-bottom"
+      "fifth fifth";
+      padding: 0;
  }
   .icon-container {
     margin: 40px 0 0 0 ;
@@ -452,7 +484,7 @@ p {
     -ms-transform: rotate(90deg); /* IE 9 */
     transform: rotate(90deg);
     right: auto;
-    bottom: -28px;
+    top: 22vh;
   }
   .approach .arrow-top-right, .approach .arrow-top-left {
     left: auto;
@@ -462,6 +494,12 @@ p {
     max-height: 150px;
     bottom: -5px;
   }
+  .approach .arrow-down {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+    top: -20px;
+    right: 50%;
+  }
 
   /* projects and about */
   .two-columns {
@@ -470,6 +508,7 @@ p {
   }
   .projects {
     height: auto;
+    padding: 6vh 6vw;
   }
   .project-image {
     max-width: 90%;

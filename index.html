@@ -13,6 +13,7 @@
   <!-- fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="images/logo.png" rel="icon" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> 
 </head>
 <body>
@@ -20,7 +21,7 @@
     <!-- menu/navbar -->
     <header class="header">
       <a href="" class="logo">
-        <img src="images/logo.png" alt="cristine design logo" />
+        <img src="images/logo.png" alt="cristine design logo">
       </a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -32,14 +33,14 @@
           <p id="about">About</p>
         </li>
         <li>
-          <a href="#email" class="email">
-            <img src="images/email.png" />
+          <a href="mailto:cristinenatalia12@yahoo.com" target="_blank" class="email">
+            <img src="images/email.png">
             <p>Email</p>
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/cristine-natalia-027003215/" class="linkedin">
-            <img src="images/linkedin.png"/>
+            <img src="images/linkedin.png">
             <p>Linkedin</p>
           </a>
         </li>
@@ -49,9 +50,9 @@
     <!-- hero -->
     <div class="hero">
       <div class="images-container">
-        <img src="images/bannerimage1.png" alt="girl image 1" class="image one" />
-        <img src="images/bannerimage2.png" alt="girl image 2" class="image two" />
-        <img src="images/bannerimage3.png" alt="girl image 3" class="image three" />
+        <img src="images/bannerimage1.png" alt="girl image 1" class="image one">
+        <img src="images/bannerimage2.png" alt="girl image 2" class="image two">
+        <img src="images/bannerimage3.png" alt="girl image 3" class="image three">
       </div>
       <div class="texts">
         <h1>
@@ -66,42 +67,47 @@
     <!-- approach -->
     <div class=approach>
       <h2>My design approach</h2>
-      <div class="flowchart">
-        <div class="icon-container" style="grid-area: first;">
-            <p class="annotation">Understand problem</p>
-            <img src="images/research.png" alt="magnifying glass" />
-            <p>Research</p>
-            <span class="arrow-right">&#8594;</span>
-        </div>
-        <div class="icon-container" style="grid-area: second;">
-          <img src="images/define.png" alt="target icon" />
-          <p>Define</p>
-          <span class="arrow-right">&#8594;</span>
-        </div>
-        <div class="icon-container" style="grid-area: third;">
-          <img src="images/design.png" alt="analyze" />
-          <p>Design</p>
-        </div>
-        <div class="icon-container" style="grid-area: fourth-top;">
-          <span class="arrow-top-right">&#8599;</span>
-          <p class="annotation">Validate solution</p>
-          <img src="images/prototype.png" alt="prototype" />
-          <p>Prototype</p>
-        </div>
-        <div class="icon-container" style="grid-area: fourth-bottom;">
-          <span class="arrow-top-left">&#8598;</span>
-          <p class=annotation>Sanity check</p>
-          <img src="images/test.png" alt="user interaction icon" />
-          <p>Test</p>
+      <div class="flowchart-wrapper">
+        <div class="flowchart-grid">
+          <div class="icon-container" style="grid-area: first;">
+              <p class="annotation">Understand problem</p>
+              <img src="images/research.png" alt="magnifying glass">
+              <p>Research</p>
+              <span class="arrow-right"><img src="images/arrow-right.png" class="arrow-icon"></span>
+          </div>
+          <div class="icon-container" style="grid-area: second;">
+            <img src="images/define.png" alt="target icon">
+            <p>Define</p>
+            <span class="arrow-right"><img src="images/arrow-right.png" class="arrow-icon"></span>
+          </div>
+          <div class="icon-container" style="grid-area: third;">
+            <img src="images/design.png" alt="analyze">
+            <p>Design</p>
+          </div>
+          <div class="icon-container" style="grid-area: fourth-top;">
+            <span class="arrow-top-right"><img src="images/arrow-top-right.png" class="arrow-icon"></span>
+            <p class="annotation">Validate solution</p>
+            <img src="images/prototype.png" alt="prototype">
+            <p>Prototype</p>
+          </div>
+          <div class="icon-container" style="grid-area: fourth-bottom;">
+            <span class="arrow-top-left"><img src="images/arrow-top-left.png" class="arrow-icon"></span>
+            <p class=annotation>Sanity check</p>
+            <img src="images/test.png" alt="user interaction icon">
+            <p>Test</p>
+          </div>
+          <span class="arrow-down" style="grid-area: fifth;">
+            <img src="images/arrow-down.png" class="arrow-icon">
+          </span>
         </div>
       </div>
-      <img src="images/approachimage.png" class="img-bottom" />
+      <img src="images/approachimage.png" class="img-bottom">
     </div>
 
     <!-- showcase -->
     <div class="projects" id="projects">
       <div class="project two-columns">
-        <img class="project-image" src="images/hotel.png" alt="hotel website design" />
+        <img class="project-image" src="images/hotel.png" alt="hotel website design">
         <div class="right">
           <div>
             <h2>UX Hotel Website</h2>
@@ -118,7 +124,7 @@
     <div class="about two-columns" id="aboutme">
       <div class="left">
         <div class="photo-frame">
-          <img src="images/cristine.png" alt="cristine's photo" />
+          <img src="images/cristine.png" alt="cristine's photo">
         </div>
       </div>
       <div class="text">
@@ -143,9 +149,11 @@
         </p>
       </div>
     </div>
-
   </div>
 
+  <footer>
+    <p>&copy; Cristine Natalia 2021</p>
+  </footer>
   <script src="index.js"></script>
 </body>
 </html>
