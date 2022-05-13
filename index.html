@@ -13,36 +13,39 @@
   <!-- fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="images/logo.png" rel="icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&family=Syne:wght@700&display=swap" rel="stylesheet">
+  <link href="images/domain-logo.png" rel="icon" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
 </head>
 <body>
   <div>
     <!-- menu/navbar -->
     <header class="header">
       <a href="" class="logo">
-        <img src="images/logo.png" alt="cristine design logo">
+        <img src="images/logo-1.png" onmouseover="this.src='images/logo-2.png'" onmouseout="this.src='images/logo-1.png'" alt="cristine-design-logo">
       </a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
-        <li id="work">
-          <p>Work</p>
-        </li>
         <li id="about">
           <p>About</p>
         </li>
+        <li id="work">
+          <p>Work</p>
+        </li>
+        <li id="blog">
+          <p>Blog</p>
+        </li>
         <li>
-          <a href="mailto:cristinenatalia12@yahoo.com" target="_blank" class="email">
-            <img src="images/email.png">
+            <a href="mailto:cristinenatalia12@yahoo.com" target="_blank" class="email">
             <p>Email</p>
-          </a>
+            </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/cristine-natalia-027003215/" class="linkedin">
-            <img src="images/linkedin.png">
+            <img src="images/linkedin-color.png">
             <p>Linkedin</p>
           </a>
         </li>
@@ -58,14 +61,19 @@
       </div>
       <div class="texts">
         <h1>
-          Hi! I’m Cristine Natalia.
+          Cristine is a <span id="heading-animation"></span> designer.
         </h1>
-        <p>A UX Designer based in Dublin, Ireland and former Business Development Associate who designs solutions for a positive user experience.
+        <p>
+          Hello! I am a UX Designer with a Business Development 
+          background in the tech industry, helping to reach <span id="business">business</span>
+          and <span id="user">user</span> goals by empathizing with both needs. Currently 
+          pursuing MSc Human Computer Interaction at UCD Dublin 
+          to feed my hunger for UX <img src="images/emoji-brain.png" alt="brain">
         </p>
       </div>
     </div>
 
-    <!-- approach -->
+    <!-- approach
     <div class=approach>
       <h2>My design approach</h2>
       <div class="flowchart-wrapper">
@@ -103,24 +111,24 @@
         </div>
       </div>
       <img src="images/approachimage.png" class="img-bottom">
-    </div>
+    </div> -->
 
     <!-- showcase -->
     <div class="projects" id="projects">
       <div class="project two-columns">
         <div class="left">
-            <img class="project-image" src="images/hotel.png" alt="hotel website design">
+            <div>
+              <h2>Smooth online booking with UX Hotel</h2>
+              <p class="pink-text">User Research, <span id="analysis">Analysis</span>, UX Design</p>
+              <p class="project-text">A new hotel design created for a student project to streamline the complexity of booking a hotel stay</p>
+            </div>
+            <a href="https://www.figma.com/proto/RtKXTdbUYJlyvYiJLfU1kd/Portfolio-revamp?page-id=0%3A1&node-id=21%3A6&viewport=241%2C48%2C0.42&scaling=scale-down-width&starting-point-node-id=21%3A6" target="_blank">
+              <button class="button">Coming Soon</button>
+            </a>
         </div>
-        <div class="right">
-          <div>
-            <h2>UX Hotel Website</h2>
-            <p>A hotel website created for a student project at<br>UX Design Institute</p>
-            <p>Role/Task:  User Research, Analysis, UX Design</p>
-            <p>Result:  A straightforward hotel booking process</p>
-          </div>
-          <a href="https://www.figma.com/proto/RtKXTdbUYJlyvYiJLfU1kd/Portfolio-revamp?page-id=0%3A1&node-id=21%3A6&viewport=241%2C48%2C0.42&scaling=scale-down-width&starting-point-node-id=21%3A6" target="_blank">
-            <button class="button">View project</button>
-          </a>
+        <div class="right" onclick="changePlace()">
+          <img class="project-image2" id="project-image2" src="images/hotel2.png" alt="hotel website design">
+          <img class="project-image1" id="project-image1" src="images/hotel.png" alt="hotel website design">
         </div>
       </div>
     </div>
@@ -128,36 +136,49 @@
     <!-- about me -->
     <div class="about two-columns" id="aboutme">
       <div class="left">
-        <div class="photo-frame">
-          <img src="images/cristine.png" alt="cristine's photo">
+        <div class="text">
+          <h2>About me</h2>
+          <p class="she">
+            SHE/<span class="her">HER</span>
+          </p>
+          <p>
+            Cristine is a former Business Developer at a travel booking software 
+            company, having 2+ years of experience in the tech industry. 
+            In her last role, she found her true calling in UX through a couple of 
+            projects that she had delivered.
+            <br>
+            <br>
+            She undertook a UX Design course from UX Design Institute and 
+            obtained her Professional Diploma in UX Design certificate in 2021. 
+            However, her avidity for UX has outgrown and led her into the MSc 
+            Human Computer Interaction at UCD Dublin commencing in Sep 2022.
+            <br>
+            <br>
+            To seize the day, she receives regular mentorship from her senior 
+            mentors and learns a million things about UX in the real world because 
+            her goal is to mentor someone who pivots their career to UX one day, 
+            just like she did <img src="images/Trophy.png" alt="trophy">
+            <br>
+            <br>
+            Probably worth mentioning that she’s a passionate traveler, 
+            amateur photographer, and obsessed with tech and psychology.
+          </p>
+          <p>
+            Say hi <img src="images/Hi.png" alt="Hi"> - <a href="mailto:cristinenatalia12@yahoo.com" target="_blank" class="animate-text">cristinenatalia12@yahoo.com</a>
+          </p>
+          </p>
         </div>
       </div>
       <div class="right">
-        <div class="text">
-          <h2>About me</h2>
-          <p>
-            Hello there!
-          </p>
-          <p>
-            I am an avid UX Designer who’s recently moved to Dublin, Ireland and holds a Bachelor’s degree in English Literature. 
-          </p>
-          <p>
-            While working as a Business Development Associate, I came across the field of UX Design to fulfill my career aspiration: channeling my problem solving and analytical skills by empathizing users’ problems through designing a solution that makes an impact to users themselves.
-          </p>
-          <p>
-            Outside work, I love traveling to new places, photography, and learning things about tech and psychology :)
-          </p>
-          <p>
-            Let’s chat - <a href="mailto:cristinenatalia12@yahoo.com" target="_blank" class="animate-text">cristinenatalia12@yahoo.com</a>
-          </p>
-          </p>
+        <div class="photo-frame">
+          <img src="images/About-me.jpg" alt="cristine's photo">
         </div>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>&copy; Cristine Natalia 2021</p>
+    <p>&copy; © 2022 Designed by Cristine Natalia</p>
   </footer>
   <script src="index.js"></script>
 </body>
