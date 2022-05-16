@@ -81,6 +81,7 @@ a {
 
 .header .logo img {
   max-height: 4em;
+  height: 4em;
   top: -0.7em;
   position: absolute;
   left: -0.7em;
@@ -196,6 +197,7 @@ a {
     padding: 20px 30px;
   }
   .header .menu {
+    font-size: 13px;
     clear: none;
     float: right;
     max-height: none;
@@ -244,7 +246,7 @@ p {
 
 .left .pink-text{
   font-style: italic;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: #F4ABBA;
 }
@@ -255,7 +257,7 @@ p {
 
 .left .project-text{
   width: 70%;
-  font-size: 30px;
+  font-size: 25px;
   color: #66806A;
   font-weight: bold;
 }
@@ -328,8 +330,8 @@ p {
 }
 
 .hero .texts p {
-  font-size: 20px;
-  width: 45%;
+  font-size: 30px;
+  width: 70%;
   text-align: left;
 }
 
@@ -494,9 +496,18 @@ p {
   cursor: pointer;
 }
 
+.project .left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+}
+
 .project-image1 {
   right: 100px;
-  max-width: 50vw;
+  max-width: 40vw;
   position: absolute;
   z-index: 1;
 }

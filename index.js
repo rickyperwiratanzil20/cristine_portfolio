@@ -20,10 +20,10 @@ function changePlace(){
     document.getElementById("project-image2").style.zIndex = 2;
     document.getElementById("project-image2").style.right = '100px';
     document.getElementById("project-image2").style.opacity = '1';
-    document.getElementById("project-image2").style.maxWidth = '50vw';
+    document.getElementById("project-image2").style.maxWidth = '35vw';
     document.getElementById("project-image1").style.right = '0px';
     document.getElementById("project-image1").style.opacity = '0.5';
-    document.getElementById("project-image1").style.maxWidth = '35vw';
+    document.getElementById("project-image1").style.maxWidth = '40vw';
     document.getElementById("project-image2").style.transition = "all 1s";
     document.getElementById("project-image1").style.transition = "all 1s";
   }
@@ -35,7 +35,7 @@ function changePlace(){
       document.getElementById("project-image2").style.maxWidth = '35vw';
       document.getElementById("project-image1").style.right = '100px';
       document.getElementById("project-image1").style.opacity = '1';
-      document.getElementById("project-image1").style.maxWidth = '50vw';
+      document.getElementById("project-image1").style.maxWidth = '40vw';
       document.getElementById("project-image1").style.transition = "all 1s";
       document.getElementById("project-image2").style.transition = "all 1s";
     }
