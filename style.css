@@ -330,8 +330,8 @@ p {
 }
 
 .hero .texts p {
-  font-size: 30px;
-  width: 70%;
+  font-size: 25px;
+  width: 50%;
   text-align: left;
 }
 
@@ -345,7 +345,7 @@ p {
 }
 
 .hero .images-container {
-  margin-top: 10em;
+  margin-top: 15em;
   margin-bottom: 0em;
 }
 
