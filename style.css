@@ -256,7 +256,7 @@ p {
 }
 
 .left .project-text{
-  width: 70%;
+  width: 100%;
   font-size: 25px;
   color: #66806A;
   font-weight: bold;
@@ -331,7 +331,7 @@ p {
 
 .hero .texts p {
   font-size: 25px;
-  width: 50%;
+  width: 75%;
   text-align: left;
 }
 
